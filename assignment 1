@@ -1,1 +1,24 @@
+#include <stdio.h>
 
+int main()
+{
+    int A, B, C, Largest;
+    printf("Enter three integers : ");
+    scanf("%d %d %d", &A, &B, &C);
+
+    if (A >= B && A >= C)
+    {
+        Largest = A;
+    }
+    else if (B >= A && B >= C)
+    {
+        Largest = B;
+    }
+    else
+    {
+        Largest = C;
+    }
+
+    printf("Largest number = %d\n", Largest);
+    return 0;
+}
